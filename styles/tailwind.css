@@ -1,0 +1,121 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+h1,
+p,
+a,
+li,
+label,
+h2,
+div,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Arvo', serif;
+}
+
+.active {
+  border-bottom: 4px solid #cdce00;
+}
+
+.activated {
+  color: #cdce00;
+}
+
+.hoverable > button:after {
+  content: '\25BC';
+  font-size: 10px;
+  padding-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.hero {
+  background-image: url('https://res.cloudinary.com/walking-voice-limited/image/upload/q_auto/v1614953454/setraco/surveyors_p93uu4.webp');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.factory {
+  background: linear-gradient(rgb(115 115 81 / 80%), rgb(44 53 41 / 80%)),
+    url('https://res.cloudinary.com/walking-voice-limited/image/upload/v1614787376/setraco/idu-3_bvrv25.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.factory:hover .of,
+.project:hover .of,
+.office:hover .of {
+  opacity: 1;
+}
+
+.project {
+  background: linear-gradient(rgb(115 115 81 / 80%), rgb(44 53 41 / 80%)),
+    url('https://res.cloudinary.com/walking-voice-limited/image/upload/q_auto/v1614792385/setraco/road_by_setraco_acosmi.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.office {
+  background: linear-gradient(rgb(115 115 81 / 80%), rgb(44 53 41 / 80%)),
+    url('https://res.cloudinary.com/walking-voice-limited/image/upload/q_auto/v1614786002/setraco/D3S_9672_013934_cp7enp.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* SLIDER */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  cursor: pointer;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow--left {
+  left: -2rem;
+}
+
+.arrow--right {
+  left: auto;
+  right: -2rem;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.strokers {
+  stroke: white;
+  fill: white;
+  font: white;
+}
+
+@media (max-width: 1200px) {
+  #__next {
+    display: none;
+  }
+}
